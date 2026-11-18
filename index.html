@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Princesse ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Arrière-plan magique (étoiles et cœurs) -->
+    <div id="magic-background"></div>
+
+    <div class="card-container">
+        
+        <!-- PAGE 1 : L'accroche mystérieuse -->
+        <section id="page1" class="page active">
+            <div class="moon">🌙</div>
+            <h1>Coucou Princesse...</h1>
+            <p>Sous ce ciel étoilé, j'ai préparé un petit truc rien que pour toi.</p>
+            <button class="btn-magic" onclick="goToPage(2)">Clique ici pour voir la suite ✨</button>
+        </section>
+
+        <!-- PAGE 2 : La déclaration et ce qu'elle représente -->
+        <section id="page2" class="page">
+            <h1>Tu es mon étoile 🌟</h1>
+            <p>Depuis que tu es entrée dans ma vie, chaque nuit est plus douce et chaque journée est plus lumineuse.</p>
+            <p>Tu portes merveilleusement bien ton prénom, <strong>Princesse</strong>, car tu règnes sur mes pensées et tu rends mon monde magique.</p>
+            <div class="nav-buttons">
+                <button class="btn-secondary" onclick="goToPage(1)">⬅ Retour</button>
+                <button class="btn-magic" onclick="goToPage(3)">Continuer 💖</button>
+            </div>
+        </section>
+
+        <!-- PAGE 3 : Le message final et la signature -->
+        <section id="page3" class="page">
+            <h1>Ce que je veux te dire... 💌</h1>
+            <p>Je voulais simplement te rappeler à quel point tu comptes pour moi. Tu es mon bonheur, mon sourire et ma plus belle histoire.</p>
+            <p>Je t'aime infiniment, bien plus que toutes les étoiles dans ce ciel.</p>
+            
+            <div class="signature">
+                Avec tout mon amour,<br>
+                <span>Siméon ❤️</span>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="btn-secondary" onclick="goToPage(2)">⬅ Retour</button>
+                <button class="btn-magic" onclick="burstHearts()">Envoyer plein d'amour ✨</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
